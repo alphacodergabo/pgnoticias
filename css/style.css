@@ -1,0 +1,325 @@
+:root{
+    --var-black:#000000;
+    --var-white:#ffffff;
+    --var-green:green;
+    --var-blue: #E3E6F1;
+    --var-purple: #563D7C;
+    --var-cream:#F4D330;
+    --var-azulbb: #184B91;
+    --var-crema: #FFD30D;
+    --var-bnavegation: #222630;
+    --var-bgcolora: #191C22;
+    --var-transpa: #3A4152;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    color: white;
+}
+
+.table2{
+    text-align: center;
+    color:white !important;
+}
+.titulo1{
+    background-color: var(--var-azulbb);
+    color:var(--var-white) !important;
+}
+ .titulo2{
+    background-color:var(--var-white);
+    color:white;
+    border: 1px solid #dee2e6;
+}
+.table2 a{
+    color: var(--var-white);
+}
+.bgcolor{
+    background-color: #D60B00 !important;
+}
+.titulo2 a{
+    color: var(--var-black);
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+body{
+    background-color: var(--var-bgcolora);
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'MontserratAlternates-ExtraLight';
+}
+
+a{
+    text-decoration: none;
+    color: var(--var-white);
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--var-bnavegation);
+    padding: 0px 20px;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--var-white);
+    }
+
+.nav-lista{
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-lista .nav-lista-item{
+    padding: 15px;
+}
+
+.nav-lista-subItem{
+    text-align: center;
+    border-top: 1px solid var(--var-white);
+}
+.nav-li{
+    padding: 10px 0px;
+    width: 130px;
+    background-color: var(--var-bnavegation);
+    color:var(--var-blanco);
+    box-sizing: border-box;
+}
+
+li>ul{ /*a todos los hijos ul contenidos en el li*/
+    display: none;
+}
+
+li:hover ul{
+    display: block;
+    position: absolute;
+    right: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+@font-face{
+    font-family:'MontserratAlternates-ExtraLight';
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf');
+}
+
+.principal{
+    background-color: var(--var-green);
+    margin: 0px;
+}
+.nav-bar ul :hover{ 
+    background-color: var(--var-cream);
+    text-decoration: none;
+}
+p{
+    text-align: center;
+}
+.nav-bar label, .nav-bar input{
+    display: none;
+}
+.container{
+    text-align: center;
+    background-color: var(--var-transpa);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.titulo h2{
+    color: var(--var-white);
+}
+.container td, h2{
+    color: var(--var-white);
+  
+}
+.nav-bar a{
+    color: var(--var-white);
+}
+.active{
+    background-color: var(--var-cream);
+}
+/*aca comienza*/
+img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+section{
+    /* padding: 50px 50px; */
+    z-index: -500;
+    text-align: center;
+    align-items: center;
+    background-color: var(--var-color-grey);
+}
+.nav-lista-item .nav-up{
+    z-index: 999999;
+}
+
+.titulo h2{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+}
+.titulo p{
+    font-size: 1em;
+    font-style: italic;
+    color: var(--var-white);
+}
+.descripcion-articulo a{
+    text-decoration: none;
+    color: black;
+}
+.descripcion-articulo p a:hover{
+    background-color: var(--var-azulbb);
+    color: var(--var-white);
+    padding: 5px;
+    border-radius: 5px;
+}
+section .contenido{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+section .contenido article{/*me dirijo a cada artículo*/
+    width: calc(100% / 3);
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.descripcion-articulo{
+    padding: 20px;
+    background-color: var(--var-color-white);
+    box-sizing: border-box;
+
+}
+.descripcion-articulo :nth-child(1){
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: wheat;
+}
+.descripcion-articulo :nth-child(2){
+    margin:0;
+    font-style: italic;
+}
+/*after-before
+pseudoelemento que exiten por un elemento caja
+after: anter - before-después
+*/
+.contenido-imagen{
+    position: relative;
+    border-radius: 5px;
+}
+/*Animación de spiner*/
+#loader{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    border: 16px solid var(--var-bgcolora);
+    z-index: 999999;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border-top: 16px solid wheat;
+    border-bottom: 16px solid wheat;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+/*Animación de spiner*/
+/*Animación on load*/
+.animate-bottom{
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+@keyframes animatebottom{
+    from{bottom: -100px; opacity: 0;}
+    to {bottom:0; opacity: 1;}
+}
+
+
+
+/*Animación on load*/
+
+
+
+
+
+/*aca termina*/
+@media only screen and (max-width:600px){
+    .nav-bar{
+        display: block;
+        padding: 0;
+        margin-top: 2px;
+        
+        
+    }
+    .nav-bar .logo{
+        display: inline-block;
+    }
+    .logo{
+        padding: 20px 20px;
+    }
+    .nav-bar, .nav-lista{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-lista .nav-lista-item{
+        border-bottom: 1px solid var(--var-white);
+    }
+    .nav-bar label{
+        display: block;
+        float: right;
+        padding: 15px;
+    }
+    ul.nav-lista{
+      width: 0;
+      margin-left: -100%;
+      transition: all 1s;
+      position: absolute;
+      background-color: var(--var-black);
+      /* display: none;
+      transition: all 0.5s; */
+
+      
+    }
+    nav.nav-bar input:checked ~ ul.nav-lista{
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        transition: all 1s;
+        /* display: block;
+        transition: all 0.5s; */
+    }
+    li{
+        width: 100%;
+    }
+    .nav-bar .nav-lista{
+        position: absolute;
+    }
+  
+}
